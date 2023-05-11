@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web bán thức ăn </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    <div id="wrapper">
+
+
+        <div id="header">
+            <div class="login">
+                <p></p>
+                <a href="login.html">Đăng Nhập </a>
+                <a href="login.html">Đăng ký </a
+                ><samp style="color: brown">VN|EN</samp>
+                <p></p>
+              </div>
+            <div class="banner">
+                <img id="img" onclick="changeImage()" src="./image/product_1.png">
+            </div>
+            <div id="top-right1">
+                <a><img onclick="showgiohang()" src="./image/cart.png"></a>
+            </div>
+            <div id="showgiohang">
+                <table>
+                    <tbody id="danhsachsanpham"></tbody>
+                </table>
+            </div>
+            <div id="menu">
+
+                <div class="item">
+                    <a href="">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="">Liên hệ</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="banner1">
+            <div class="box-left">
+                <h2>
+                    <span>THỨC ĂN</span>
+                    <br>
+                    <span>THƯỢNG HẠNG</span>
+                </h2>
+                <p>Chuyên cung cấp các món ăn đảm bảo dinh dưỡng hợp vệ sinh đến người dùng,phục vụ người dùng 1 cái hoàn hảo nhất</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="box-right">
+
+            </div>
+
+        </div>
+
+        <div id="wp-products">
+            <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+            <div id="showsanpham"></div>
+
+            <div id="saleoff">
+                <div class="box-left">
+                    <h1>
+                        <span>GIẢM GIÁ LÊN ĐẾN</span>
+                        <span>30%</span>
+                    </h1>
+                </div>
+                <div class="box-right"></div>
+            </div>
+
+            <div id="footer">
+                <div class="box">
+                    <div class="logo">
+                        <img src="image/logo.png" alt="">
+                    </div>
+                    <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+                </div>
+                <div class="box">
+                    <h3>NỘI DUNG</h3>
+                    <ul class="quick-menu">
+                        <div class="item">
+                            <a href="">Trang chủ</a>
+                        </div>
+                        <div class="item">
+                            <a href="">Sản phẩm</a>
+                        </div>
+                        <div class="item">
+                            <a href="">Blog</a>
+                        </div>
+                        <div class="item">
+                            <a href="">Liên hệ</a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>LIÊN HỆ</h3>
+                    <form action="">
+                        <input type="text" placeholder="Họ Và Tên">
+                        <input type="text" placeholder="Địa chỉ email">
+                        <input type="text" placeholder="Số Điện Thoại">
+                        <button>Nhận tin</button>
+                    </form>
+                </div>
+            </div>
+            <article>
+                <div id="showsanpham"></div>
+            </article>
+        </div>
+
+</body>
+
+</html>
+<script src="./code/sanpham.js"></script>
+<script src="./code/banner.js"></script>
+<script src="./code/giohang.js"></script>
+<script src="./code/xl_giohang.js"></script>

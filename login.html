@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <form class="form">
+        <h2>Sign in</h2>
+        <div class="inputControl">
+            <input type="email" id="email" placeholder=" Email" valid />
+        </div>
+        <div class="inputControl">
+            <input type="password" id="password" placeholder="Mật Khẩu" />
+        </div>
+        <button type="submit">Sign In</button>
+        <div class="atag">
+            <a href="#">Quên Mật Khẩu</a>
+            <a href="#">Đăng Ký</a>
+        </div>
+    </form>
+    <script>
+        const form = document.querySelector('.form');
+        const email = document.querySelector('#email');
+        const password = document.querySelector('#password');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            if (email.value === '' || password.value === '') {
+                alert('Vui lòng nhập đầy đủ thông tin!');
+            } else if (password.value.length < 6) {
+                alert('Mật khẩu phải chứa ít nhất 6 ký tự!');
+            } else {
+                alert('Đăng nhập thành công!');
+                window.location.href = '../asm2.html';
+            }
+        });
+    </script>
+</body>
+
+</html>
